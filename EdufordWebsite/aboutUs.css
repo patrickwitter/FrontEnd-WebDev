@@ -1,0 +1,63 @@
+
+.header{
+    max-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30,0.7),rgba(4, 9, 30,0.7)), url("./eduford_img/background.jpg");
+}
+.headerText{
+    /* outline: 1px solid black; */
+    height: auto;
+    margin-top: 20px;
+}
+
+.aboutContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutItem{
+    max-width: 45%;
+    min-width: 300px;
+    text-align: left;
+}
+.aboutImg{
+    max-width: 100%;
+    min-width: 300px;
+}
+
+h1.aboutTxt{
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+p.aboutTxt{
+    color: grey;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.visit-Butn {
+    text-align: center;
+    border-color: orange;
+    color: orange !important;
+}
+.visit-Butn:hover{
+    background-color: rgba(255, 0, 0,.5);
+    color: white !important;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .aboutContainer{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .aboutItem{
+        margin-bottom: 1em;
+    }
+}
+
+
+
+

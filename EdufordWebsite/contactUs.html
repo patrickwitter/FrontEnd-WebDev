@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford Website-Patrick Witter</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./contactUs.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="./eduford_img/webpageIcon.png">
+</head>
+
+<body>
+    <section class="header">
+        <!-- Naviagtion -->
+
+        <nav class="navbar">
+            <img src="./eduford_img/logo.png" alt="">
+            <ul class="nav-links" id="navLinks">
+                <li><i class="fa fa-times" id="close-btn" onclick="closeMenu()"></i></li>
+                <li> <a href="./home.html">home</a></li>
+                <li><a href="./aboutUs.html">about</a></li>
+                <li><a href="./blog.html">blog</a></li>
+                <li><a href="./contactUs.html">contact</a></li>
+            </ul>
+            <i class="fa fa-bars" id="menu-btn" onclick="showMenu()"></i>
+        </nav>
+        <div class="headerText">
+            <h1>contact us</h1>
+        </div>
+    </section>
+
+    <section class="infoSec">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30165.148964765147!2d-76.90962359479248!3d17.968214664471255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sjm!4v1627566372479!5m2!1sen!2sjm"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <section class="infoSec contactSec">
+        <div class="contactInfo">
+            <div class="contact-container">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <div class="contactTxt">
+                    <h3>xyz road, abc building</h3>
+                    <p>Spanish Town St.Catherine</p>
+
+                </div>
+            </div>
+            <div class="contact-container">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <div class="contactTxt">
+                    <h3>876-222-5555</h3>
+                    <p>Monday to Saturday 10am to 8pm</p>
+
+                </div>
+            </div>
+            <div class="contact-container">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <div class="contactTxt">
+                    <h3>witter10042001@gmail.com</h3>
+                    <p>Email us your query</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="sendMess">
+            <form action="">
+                <input type="text" placeholder="Enter Name">
+                <input type="text" placeholder="Enter Email">
+                <input type="text" placeholder="Enter your subject">
+                <input type="text" placeholder="Message" class="postCom">
+                <input type="submit" value="Send Message" id="submitBtn">
+            </form>
+        </div>
+    </section>
+
+
+    </section>
+    <section class="infoSec">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore cupiditate temporibus, ut assumenda
+            cumque voluptatem animi aperiam itaque at.</p>
+        <div class="socials">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <p>Made by Patrick Anthony Witter</p>
+    </section>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford Website-Patrick Witter</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./blog.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="./eduford_img/webpageIcon.png">
+</head>
+
+<body>
+    <section class="header">
+        <!-- Naviagtion -->
+
+        <nav class="navbar">
+            <img src="./eduford_img/logo.png" alt="">
+            <ul class="nav-links" id="navLinks">
+                <li><i class="fa fa-times" id="close-btn" onclick="closeMenu()"></i></li>
+                <li> <a href="./home.html">home</a></li>
+                <li><a href="./aboutUs.html">about</a></li>
+                <li><a href="./blog.html">blog</a></li>
+                <li><a href="./contactUs.html">contact</a></li>
+            </ul>
+            <i class="fa fa-bars" id="menu-btn" onclick="showMenu()"></i>
+        </nav>
+        <div class="headerText">
+            <h1>our certificate & online programs for 2021</h1>
+        </div>
+    </section>
+
+    <section class="infoSec">
+        <div class="blogContent">
+
+            <div class="blogItem-left">
+                <img src="./eduford_img/certificate.jpg" alt="">
+                <h1>our certificate & online programs for 2021</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, voluptas.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, corrupti
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, natus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dignissimos.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, harum?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, nemo!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, doloribus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptates.
+                </p>
+            </div>
+
+            <div class="blogItem-right">
+                <h2>post categories</h2>
+                <div class="right-row">
+                    <span>business analytics</span>
+                    <span>21</span>
+                </div>
+                <div class="right-row">
+                    <span> data science</span>
+                    <span>28</span>
+                </div>
+                <div class="right-row">
+                    <span> machine learning</span>
+                    <span>31</span>
+                </div>
+                <div class="right-row">
+                    <span> computer science</span>
+                    <span>40</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="commentSec">
+            <h2>Leave a comment</h2>
+
+            <form action="">
+                <input type="text" placeholder="Enter Name">
+                <input type="text" placeholder="Enter Email">
+                <input type="text" placeholder="Post Comment " class="postCom">
+                <input type="submit" value="Post Comment" id="submitBtn">
+            </form>
+        </div>
+
+    </section>
+    <section class="infoSec">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore cupiditate temporibus, ut assumenda
+            cumque voluptatem animi aperiam itaque at.</p>
+        <div class="socials">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <p>Made by Patrick Anthony Witter</p>
+    </section>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

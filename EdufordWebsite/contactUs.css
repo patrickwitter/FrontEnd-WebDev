@@ -1,0 +1,81 @@
+iframe{
+    width: 100%;
+}
+
+
+.contactSec{
+    display: flex;
+    align-items: flex-start;
+    /* outline: 1px solid black; */
+    flex-flow: row wrap;
+
+}
+
+.contactInfo{
+    flex:1;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    /* outline: 1px solid red; */
+}
+.contact-container{
+    display: flex;
+    margin-bottom: 2em;
+    color: grey
+}
+
+.contactSec .fa{
+    margin-right: 20px;
+    color: orange !important;
+}
+
+.contactTxt{
+    text-transform: capitalize;
+    flex:1;
+    min-width: 200px;
+}
+
+.sendMess{
+    max-width: 40%;
+    text-align: left;
+    outline: 1px solid grey;
+    padding: 0 4em 4em 4em ;
+    min-width: 500px;
+}
+
+@media screen and (max-width:800px)
+{
+    .sendMess{
+        min-width: 200px;
+        margin-top: 2em;
+        /* outline: 1px solid blue; */
+    }
+    
+}
+.sendMess input{
+    width: 100%;
+    padding: .75em;
+    background-color: rgba(128, 128, 128,.1);
+    border: 1px solid grey;
+    margin: 1em auto;
+}
+
+
+.postCom{
+    height: 100px;
+}
+
+#submitBtn{
+    background-color: transparent;
+    border-color: orange;
+    color: orange;
+    font-weight: bold;
+    width: 60%;
+    min-width: 150px;
+}
+#submitBtn:hover{
+    background-color: rgba(255, 0, 0,.7);
+    border-color: rgba(255, 0, 0,.7);
+    color: white;
+    transition: 500ms;
+}
