@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root{
+    --primary-color:green;
+}
+
+.container{
+    min-height: 100vh;
+    max-width: 100%;
+    padding-left: 4vw;
+    padding-top: 1vh;
+    /* outline:10px solid black; */
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+/* Nav Bar */
+.navbar{
+    max-width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 2px solid red; */
+}
+
+.logo{
+    height:80px;
+}
+
+/* These are the closebutton and menu icons */
+#menu-btn , #close-btn{
+    display: none;
+}
+
+.navlist{
+    text-align: right;
+    flex:1;
+    margin-right: 2em; 
+    list-style-type: none;
+    /* outline: 1px solid black; */
+}
+
+.navlist li{
+    display: inline-flex;
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+.navlist li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+.navlist li:hover
+{
+    border: 1px solid var(--primary-color);
+    padding: 1em;
+    border-radius: 10px;
+    transition: 250ms;
+    background-color: var(--primary-color); 
+}
+.navlist li:hover a{
+    color: white;
+}
+
+@media screen and (max-width: 800px)
+{
+    /* This is the menu drawer when the screen is small  */
+    /* The animation strategy is to move the list to the right of the screen and
+        make it not visible.
+        we achieve this by making the overflow-x property on the main conatiner
+        hidden. Then in the js file we move the navlist back on the screen
+        by reseting the right value to zero and
+        increase the width. We let the height remain at 100% as if we modified both of them
+        the white background would disapper.
+
+    */
+    .navlist{
+        position: absolute;
+        width:0;
+        height: 100%;
+        right:-100px;
+        top:0;
+        margin-right: 0;
+        z-index: 3;
+        background-color:white;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        transition: width 500ms;
+        
+    }
+
+    /* Spacing between list items */
+    .navlist li{
+        padding-bottom: 1em;
+    }
+    
+    /* First menu item below close button to give space */
+    .navlist li:nth-of-type(2)
+    {
+        margin-top:10em;
+    }
+    
+    #menu-btn{
+        display: block;
+        margin-right: 1.5em;
+    }
+
+    #close-btn{
+        margin-top:2em;
+        display: block;
+    }
+
+    
+}
+/* Main Content */
+.content{
+    margin-top: 2em;
+    flex:1;
+    display:flex;
+}
+
+@media screen and (max-width:1000px)
+{
+    .content{
+       flex-flow: column nowrap;
+     
+    }
+}
+/* Content Text */
+.contentText{
+    max-width: 60%;
+    text-align: left;
+}
+
+.contentText span{
+    color: var(--primary-color);
+}
+
+.contentText h1{
+    font-size: 70px;
+}
+
+.contentText p{
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.butn{
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    color: white;
+    max-width:30%;
+    min-width: 150px;
+    border-radius: 20px;
+    text-align: center;
+    padding: .5em;
+    cursor: pointer;
+}
+
+
+
+/* Center Image */
+.leadImg{
+    max-width: 400px;
+}
+
+@media screen and (max-width:500px)
+{
+    .leadImg{
+        max-width: 100%;
+    }
+}
+/* Social Media icons */
+.icon{
+    list-style-type: none;
+    min-width: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.icon img{
+    padding-bottom: .5em;
+    max-width: 30px;
+    filter: invert(1);
+}
+
+@media screen and (max-width:1000px)
+{
+    .content{
+        position: relative;
+    }
+    .icon{
+       position: absolute;
+       left: 85%;
+       bottom: 10%;
+       z-index: 2;
+    }
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    
+}
+footer img{
+    margin-right: 30px;
+    max-width: 50px; 
+}
+
+footer img:hover{
+    transform: translateY(-20%);
+    transition: 300ms;
+}
+
+/* Circle image */
+.circle{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    clip-path: circle(600px at right bottom);
+    z-index: -1;
+    transition: 200ms;
+}

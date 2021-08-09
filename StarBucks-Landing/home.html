@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks-LandingPage</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <nav class="navbar">
+            <img src="./images/logo.png" alt="" class="logo">
+            <i class="fa fa-bars" id="menu-btn" onclick="showMenu()"></i>
+
+            <ul class="navlist" id="navList">
+                <li><i class="fa fa-times" id="close-btn" onclick="closeMenu()"></i></li>
+                <li><a href="">home</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="">what's new</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
+        <div class=" content" role="main">
+            <div class="contentText">
+                <h1>It's not just Coffee</h1>
+                <h1>It's <span>Starbucks</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, mollitia!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, asperiores!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ut.
+                </p>
+                <p class="butn"> learn more</p>
+            </div>
+
+
+            <img src="./images/img1.png" alt="" class="leadImg">
+
+
+            <ul class="icon">
+                <li><img src="./images/facebook.png" alt=""></li>
+                <li><img src="./images/twitter.png" alt=""></li>
+                <li><img src="./images/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <footer>
+            <img src="./images/thumb1.png" alt="" class="thumbnail" onclick="imgSlider('./images/img1.png','green')">
+            <img src="./images/thumb2.png" alt="" class="thumbnail" onclick="imgSlider('./images/img2.png','pink')">
+            <img src="./images/thumb3.png" alt="" class="thumbnail" onclick="imgSlider('./images/img3.png','#d752b1')">
+
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
